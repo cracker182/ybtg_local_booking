@@ -1,0 +1,23 @@
+{
+  "name": "ybtg_local_booking",
+  "version": "1.0.0",
+  "description": "## CAS Aufgabenstellung",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cracker182/ybtg_local_booking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cracker182/ybtg_local_booking/issues"
+  },
+  "homepage": "https://github.com/cracker182/ybtg_local_booking#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
