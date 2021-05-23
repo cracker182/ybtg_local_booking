@@ -8,6 +8,10 @@ function getAllUsers() {
     return knex("Users").select("*");
 };
 
+function getUser(id) {
+    return knex("Users").where("id", id);
+};
+
 function deleteUser(id) {
     return knex("Users").where("id", id).del();
 };
@@ -23,6 +27,7 @@ function validateLogin(name, password) {
 module.exports = {
     addUser,
     getAllUsers,
+    getUser,
     deleteUser,
     updateUser,
     validateLogin

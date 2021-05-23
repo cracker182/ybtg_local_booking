@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "52cd1afd-e2a5-4da8-9502-5c23a5cd921e",
+		"name": "Projektaufgabe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Klaus",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "klaus",
+							"type": "text"
+						},
+						{
+							"key": "createdAt",
+							"value": "18.05.2021 00:00:00.000",
+							"type": "text"
+						},
+						{
+							"key": "updatedAt",
+							"value": "[{\"key\":\"createdAt\",\"value\":\"18.05.2021 00:00:00.000\",\"description\":\"\",\"type\":\"text\",\"enabled\":true}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"Festival\",\r\n    \"name\": \"Parookaville\",\r\n    \"description\": \"Das größte EDM Festival Deutschlands!\",\r\n    \"location\": \"Flughafen Weeze\",\r\n    \"date\": \"23.07.2021 - 25.07.2021\",\r\n    \"timeBegin\": \"23.07.2021 14:00:00\",\r\n    \"timeEnd\": \"25.07.2021 15:00:00\",\r\n    \"registerUntil\": \"20.07.2021\",\r\n    \"costs\": \"280\",\r\n    \"organizer\": \"Q-Dance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Event by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/event/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"event",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get Booking By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update Booking",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"event_id\": 3,\r\n    \"user_id\": 3,\r\n    \"isCanceled\": 1,\r\n    \"createdAt\": \"23.05.2021 00:00:00\",\r\n    \"updatedAt\": \"23.05.2021 00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/booking/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"booking",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_id\": 3,\r\n    \"user_id\": 1,\r\n    \"createdAt\": \"23.05.2021 00:00:00\",\r\n    \"updatedAt\": \"23.05.2021 00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

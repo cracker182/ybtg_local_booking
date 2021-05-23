@@ -19,6 +19,11 @@ server.get(userPatch_s, async (req, res) => {
     res.status(200).json({ users });
 });
 
+server.get(userPatchId_s, async (req, res) => {
+    const users = await db_user.getUser(req.params.id);
+    res.status(200).json({ users });
+});
+
 server.patch(userPatchId_s, async (req, res) => {
     const id = await db_user.updateUser(req.params.id, req.body);
     res.status(200).json({ id });
