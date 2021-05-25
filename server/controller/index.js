@@ -23,8 +23,14 @@ app_o.use(EXPRESS.static(PATH.join(baseDir_s, 'client')));
 
 
 app_o.get('/', function (req, res) {
-    //let path_s = PATH.join(baseDir_s, 'client', 'html', 'test.html');
-    //res.sendFile(path_s)
+    let path_s = PATH.join(baseDir_s, 'client', 'html', 'test.html');
+    res.sendFile(path_s)
+});
+
+
+app_o.get('/buchungen', function (req, res) {
+    let path_s = PATH.join(baseDir_s, 'client', 'html', 'buchungen.html');
+    res.sendFile(path_s)
 });
 
 app_o.use('/', userController_o);
