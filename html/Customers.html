@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="/styles/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container">
+            <nav class="nav">  
+              <a class="navbar-brand" href="#">
+                  <!--img src="Logo_1.svg" alt="" width="75" height="24" class="d-inline-block align-text-top"-->
+                  Your Best Travel Guide
+              </a>
+              <button type="button" class="btn btn-outline-primary">Meine Kunden</button>
+              <button type="button" class="btn btn-outline-secondary">Angebotserstellung</button>
+              <button type="button" class="btn btn-outline-secondary">Veranstaltungen</button>
+              <button type="button" class="btn btn-outline-secondary">Auswertungen</button>
+                  <button type="button" class="btn btn-primary position-relative">
+                    Nachrichten <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+                  </button>
+            </nav>
+            </div>
+          </nav>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <h2 class="text-uppercase fw-bold mb-4"> Ansicht der lokalen Agentur</h2>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name, Vorname</th>
+                <th scope="col">Kundennummer</th>
+                <th scope="col">Sprache</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>Schmitz, Manfred</td>
+                <td>ABC123</td>
+                <td>Deutsch</td>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Verwalten
+                </button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Merte, Aneglo</td>
+                <td>DEF456</td>
+                <td>Denglisch</td>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Verwalten
+                </button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Trump, Donald</td>
+                <td>000000</td>
+                <td>Englisch</td>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Verwalten
+                </button></td>
+              </tr>
+            </tbody>
+          </table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Benutzerverwaltung</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-text">Vorname und Nachname</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Kundennummer</span>
+          <input type="text" aria-label="Customer number" class="form-control">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Sprache</span>
+          <input type="text" aria-label="language" class="form-control">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        <button type="button" class="btn btn-primary">Änderungen speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
