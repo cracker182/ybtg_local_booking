@@ -14,6 +14,8 @@ const userController_o = require('./user_c');
 const eventController_o = require('./event_c');
 const bookingController_o = require('./booking_c');
 
+const adminTravelerController = require('./admin/TravelerController');
+
 let app_o = EXPRESS();
 
 let baseDir_a = PATH.dirname(require.main.filename).split(PATH.sep);
@@ -26,6 +28,11 @@ app_o.set('view engine', 'pug');
 app_o.use('/', userController_o);
 app_o.use('/', eventController_o);
 app_o.use('/', bookingController_o);
+
+//app_o.use('/', adminEventController);
+app_o.use('/', adminTravelerController);
+//app_o.use('/', adminEvaluationController);
+//app_o.use('/', adminOfferController);
 
 
 app_o.get('/', async function (req, res) {
