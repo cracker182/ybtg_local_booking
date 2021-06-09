@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="/styles/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container">
+            <nav class="nav">  
+              <a class="navbar-brand" href="#">
+                  <!--img src="Logo_1.svg" alt="" width="75" height="24" class="d-inline-block align-text-top"-->
+                  Your Best Travel Guide
+              </a>
+              <button type="button" class="btn btn-outline-secondary">Meine Kunden</button>
+              <button type="button" class="btn btn-outline-secondary">Angebotserstellung</button>
+              <button type="button" class="btn btn-outline-secondary">Veranstaltungen</button>
+              <button type="button" class="btn btn-outline-primary">Auswertungen</button>
+                  <button type="button" class="btn btn-primary position-relative">
+                    Nachrichten <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+                  </button>
+            </nav>
+            </div>
+          </nav>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <h2 class="text-uppercase fw-bold mb-4"> Ansicht der lokalen Agentur</h2>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <h2 class="text-uppercase fw-bold mb-4"></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Veranstaltung</th>
+                <th scope="col">Datum & Uhrzeit</th>
+                <th scope="col">Preis</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>Kayaktour</td>
+                <td>27.05.2021, 10:00 Uhr</td>
+                <td>50 € / Person</td>
+                <td><button type="button" class="btn btn-primary btn-sm">Verwalten</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Tanzkurs</td>
+                <td>28.05.2021, 17:00</td>
+                <td>25 € / Person</td>
+                <td><button type="button" class="btn btn-primary btn-sm">Verwalten</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Besichtigung Ruinen</td>
+                <td>28.05.2021, 09:00</td>
+                <td>100 € / Person</td>
+                <td><button type="button" class="btn btn-primary btn-sm">Verwalten</button></td>
+              </tr>
+            </tbody>
+          </table>
+          
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12 text-center">
+              <h2>Verlauf der Buchungen je Veranstaltung</h2>
+          </div>
+          
+          <div class="col-xs-12 text-center">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Line Chart</h3>
+                  </div>
+                  <div class="panel-content text-center">
+                      <canvas id="myLineChart" class="chart"></canvas>
+                  </div>
+                  <div class="panel-footer">Hier sehen Sie den Verlauf.</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+
+</html>
+
+</body>
+</html>
